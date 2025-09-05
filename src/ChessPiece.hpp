@@ -1,13 +1,6 @@
 #pragma once
 
-#include <cstdint>
 #include <vector>
-
-struct Position
-{
-    uint8_t x;
-    uint8_t y;
-};
 
 enum class Color
 {
@@ -19,7 +12,6 @@ class ChessPiece
 {
 public:
     ChessPiece(Color color);
-    virtual bool isLegalMove(Position startPosition, Position endPosition) const = 0;
     Color getColor() const;
 
 private:

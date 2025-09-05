@@ -4,5 +4,4 @@
 
 class Pawn : ChessPiece
 {
-    bool isLegalMove(Position startPosition, Position endPosition) const override;
 };
